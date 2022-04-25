@@ -201,7 +201,19 @@ img {
     border-radius: 5px;
     padding: 18px 30px;
     text-align: center;
+
+    transform: scale(0.4);
+    opacity: 0;
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
 }
+
+.apis-item.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
 .item-title {
     font-weight: 700;
     font-size: 20px;

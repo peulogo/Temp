@@ -1,16 +1,24 @@
 let header = document.querySelector('.header');
 let heroTitle = document.querySelector('.hero-title');
+let select = document.querySelector('.hero-select');
+let selectButton = document.querySelector('.hero-button');
 
 window.onload = async() => { 
-   let timeID = setTimeout( () => {
+   setTimeout( () => {
     getHeder();
-       clearTimeout(timeID);
    }, 500)
-   let timeID2 = setTimeout( () => {
+
+   setTimeout( () => {
     getHeroTitle ();
-       clearTimeout(timeID2);
    }, 1000)
-     
+
+   setTimeout( () => {
+    getSelect ();
+   }, 1500)
+
+   setTimeout( () => {
+    getSelectButton ();
+   }, 2000)
    
 }
 
@@ -22,3 +30,12 @@ let getHeder = () => {
 let getHeroTitle = () => {
     heroTitle.classList.add('active');
 }
+
+let getSelect = () => {
+    select.classList.add('active');
+}
+
+let getSelectButton = () => {
+    selectButton.classList.add('active');
+}
+

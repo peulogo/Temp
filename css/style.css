@@ -145,6 +145,14 @@ img {
     color: #2B2B2B;
 
     margin-bottom: 25px;
+    transform: scale(0.4);
+    opacity: 0;
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+
+.hero-select.active{
+    opacity: 1;
+    transform: scale(1);
 }
 
 .hero-button {
@@ -154,7 +162,17 @@ img {
     background: #4F23FF;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
     border-radius: 43px;
+    transform: scale(0.4);
+    opacity: 0;
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
 }
+
+.hero-button.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
 .hero-button-text {
     font-family: 'Roboto';
     font-style: normal;

@@ -20,7 +20,6 @@ window.onload = () => {
    setTimeout( () => {
     getSelectButton ();
    }, 2000)
-   
 }
 
 
@@ -39,8 +38,6 @@ let getSelect = () => {
 let getSelectButton = () => {
     selectButton.classList.add('active');
 }
-
-
 
 
 window.addEventListener('scroll', animOnScroll)

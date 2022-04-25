@@ -112,6 +112,15 @@ img {
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
 
     margin-bottom: 100px;
+
+    transform: scale(0.4);
+    opacity: 0;
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+
+.hero-title.active{
+    opacity: 1;
+    transform: scale(1);
 }
 
 .hero-select{
